@@ -48,7 +48,7 @@ else:
     alpha_val = st.sidebar.slider("Tune Alpha Penalty (Lasso Fine Range):", min_value=0.0001, max_value=0.1000, value=0.0050, step=0.0005, format="%.4f")
 
 st.title(" California Housing Enterprise Dashboard")
-st.markdown("An interactive workspace combining geographic exploration with live Machine Learning hyperparameter tuning.")
+
 
 m1, m2, m3 = st.columns(3)
 m1.metric("Filtered Districts", f"{len(filtered_df):,}")
